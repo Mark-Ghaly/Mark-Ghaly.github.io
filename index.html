@@ -11,71 +11,79 @@
             margin: 0;
             padding: 0;
             font-family: 'Arial', sans-serif;
+            background: url('path-to-your-image') center center no-repeat;
+            background-size: cover;
+        }
+        nav {
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: white;
+            padding: 0 1em;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
         }
         .bg {
-            background-image: url('images/background.jpg');
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
-            text-align: center;
+            height: 100%;
             color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         .overlay {
             background: rgba(0, 0, 0, 0.7);
-            padding: 20px;
+            padding: 2em;
             border-radius: 10px;
-        }
-        h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            font-size: 1.2em;
-        }
-        .social-links {
-            font-size: 2em;
-            margin: 20px 0;
         }
         .social-links a {
             color: white;
-            text-decoration: none;
             margin: 0 10px;
-        }
-        .social-links a:hover {
-            color: #ddd;
+            font-size: 1.5em;
         }
         .button {
-            text-decoration: none;
             background-color: #3498db;
             color: white;
             padding: 10px 20px;
             border-radius: 20px;
+            text-decoration: none;
             display: inline-block;
             margin-top: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: all 0.3s ease;
+            transition: background-color 0.3s;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         .button:hover {
             background-color: #2980b9;
-            box-shadow: 0 6px 8px rgba(0,0,0,0.2);
+        }
+        .button.resume {
+            background-color: #555;
+        }
+        .button.resume:hover {
+            background-color: #333;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+    </nav>
     <div class="bg">
         <div class="overlay">
             <h1>I'm Mark Ghaly.</h1>
-            <p>I am a Computer Engineer based in Bayonne, NJ, with a strong background in software development and DevOps. Passionate about creating efficient and innovative solutions to complex problems.</p>
+            <p>Computer Engineer based in Bayonne, NJ. Passionate about creating efficient and innovative solutions to complex problems.</p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/mark-ghaly-4497821b6/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/markghaly"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/markghaly"><i class="fab fa-twitter"></i></a>
             </div>
-            <a href="path-to-your-resume.pdf" class="button" download>Resume</a>
-            <a href="mailto:mmg8@njit.edu" class="button">Contact</a>
+            <a href="path-to-your-resume.pdf" class="button resume" download>Resume</a>
+            <a href="mailto:mmg8@njit.edu" class="button contact">Contact</a>
         </div>
     </div>
 </body>
