@@ -1,73 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mark Ghaly's Resume</title>
     <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #333;
-            background-color: #f4f4f4;
+        body, html {
+            height: 100%;
             margin: 0;
-            padding: 0;
         }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-        h1 {
-            color: #2c3e50;
-            font-size: 2.5em;
+        .bg {
+            /* Use a background image of your choice */
+            background-image: url('your-background-image.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            color: white;
         }
-        .contact-info, .education, .introduction {
-            margin-bottom: 30px;
+        .content-box {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            padding: 50px;
+            border-radius: 10px;
         }
-        .contact-info p, .education p, .introduction p {
-            line-height: 1.6;
+        .social-links img {
+            height: 24px;
+            width: 24px;
+            margin: 0 10px;
         }
-        a {
-            color: #3498db;
+        .button {
+            display: inline-block;
+            margin: 20px 10px;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
             text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        a:hover {
-            text-decoration: underline;
-        }
-        .introduction {
-            text-align: justify;
-        }
-        .education p {
-            margin-bottom: 5px;
-        }
-        h2 {
-            border-bottom: 2px solid #2c3e50;
-            color: #2c3e50;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
+        .button:hover {
+            background: #2980b9;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Mark Ghaly</h1>
-        <div class="contact-info">
-            <p><strong>Phone:</strong> (551)221-5704</p>
-            <p><strong>Email:</strong> mmg8@njit.edu</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mark-ghaly-4497821b6/" target="_blank">Mark's LinkedIn Profile</a></p>
-        </div>
-        <div class="introduction">
-            <h2>Introduction</h2>
+    <div class="bg">
+        <div class="content-box">
+            <h1>I'm Mark Ghaly.</h1>
             <p>I am a Computer Engineer based in Bayonne, NJ, with a strong background in software development and DevOps. Passionate about creating efficient and innovative solutions to complex problems.</p>
-        </div>
-        <div class="education">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Computer Engineering</strong></p>
-            <p>New Jersey Institute of Technology</p>
-            <p>Major: Computer Engineering. Minor: Computer Science</p>
-            <p>CGPA: 3.98/4.0, Major GPA: 4.0/4.0</p>
-            <p>September 2021 - December 2023, Newark NJ</p>
+            <div class="social-links">
+                <!-- Update with your social media links and icons -->
+                <a href="your-linkedin-profile" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"/></a>
+                <a href="your-github-profile" target="_blank"><img src="github-icon.png" alt="GitHub"/></a>
+                <a href="your-twitter-profile" target="_blank"><img src="twitter-icon.png" alt="Twitter"/></a>
+            </div>
+            <a href="your-resume-link.pdf" class="button" download>Resume</a>
+            <a href="mailto:mmg8@njit.edu" class="button">Contact</a>
         </div>
     </div>
 </body>
